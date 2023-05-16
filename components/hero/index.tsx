@@ -29,7 +29,7 @@ export default function Hero() {
             <h2 className="mt-20 text-4xl font-medium text-white text-opacity-75">Pour</h2>
             <p className="mt-1 text-7xl font-extrabold uppercase text-white">Lui </p>
             <a
-              href="#"
+              href="/search/pour-lui"
               className="mt-4 rounded-md bg-white px-4 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
             >
               Acheter maintenant

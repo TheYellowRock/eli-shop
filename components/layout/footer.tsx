@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import GitHubIcon from 'components/icons/github';
 import LogoIcon from 'components/icons/logo';
-import VercelIcon from 'components/icons/vercel';
 import { getMenu } from 'lib/shopify';
 import { Menu } from 'lib/shopify/types';
 
@@ -17,12 +16,11 @@ export default async function Footer() {
     <footer className="border-t border-gray-700 bg-athensGray text-black dark:bg-black dark:text-white">
       <div className="mx-auto w-full max-w-7xl px-6">
         <div className="grid grid-cols-1 gap-8 border-b border-gray-700 py-12 transition-colors duration-150 lg:grid-cols-12">
-          <div className="col-span-1 lg:col-span-3">
+          <div className="relative col-span-1 lg:col-span-3">
             <a className="flex flex-initial items-center font-bold md:mr-24" href="/">
               <span className="mr-2">
-                <LogoIcon className="h-8" />
+                <LogoIcon className="h-16" />
               </span>
-              <span>{SITE_NAME}</span>
             </a>
           </div>
           {menu.length ? (
@@ -47,22 +45,10 @@ export default async function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between space-y-4 pb-10 pt-6 text-sm md:flex-row">
+        <div className="flex flex-col items-center  space-y-4 pb-10 pt-6 text-sm md:flex-row">
           <p>
             &copy; {copyrightDate} {SITE_NAME}. All rights reserved.
           </p>
-          <div className="flex items-center text-sm text-white dark:text-black">
-            <span className="text-black dark:text-white">Created by</span>
-            <a
-              rel="noopener noreferrer"
-              href="https://vercel.com"
-              aria-label="Vercel.com Link"
-              target="_blank"
-              className="text-black dark:text-white"
-            >
-              <VercelIcon className="ml-3 inline-block h-6" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>
