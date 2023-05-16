@@ -1,7 +1,8 @@
-import { Carousel } from 'components/carousel';
+import { CarouselForHer, CarouselForHim } from 'components/carousel';
 import { BestSellerForHer, BestSellerForHim } from 'components/grid/three-items';
 import Hero from 'components/hero';
 import Footer from 'components/layout/footer';
+import SalesHero from 'components/salesHero';
 import { Suspense } from 'react';
 
 export const runtime = 'edge';
@@ -29,12 +30,21 @@ export default async function HomePage() {
         <BestSellerForHer />
         <Suspense>
           {/* @ts-expect-error Server Component */}
-          <Carousel />
-          {/* @ts-expect-error Server Component */}
-          <BestSellerForHim />
+          <CarouselForHer />
           <Suspense>
             {/* @ts-expect-error Server Component */}
-            <Footer />
+            <BestSellerForHim />
+            <Suspense>
+              {/* @ts-expect-error Server Component */}
+              <CarouselForHim />
+
+              <SalesHero />
+
+              <Suspense>
+                {/* @ts-expect-error Server Component */}
+                <Footer />
+              </Suspense>
+            </Suspense>
           </Suspense>
         </Suspense>
       </Suspense>

@@ -22,7 +22,8 @@ module.exports = {
         violetDark: '#4c2889',
         athensGray: '#E2E6EC',
         loblolly: '#BBC3CD',
-        sandal: '#AE816F'
+        sandal: '#AE816F',
+        ebony: '#2A293E'
       },
       keyframes: {
         fadeIn: {

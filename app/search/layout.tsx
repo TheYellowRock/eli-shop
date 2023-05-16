@@ -13,7 +13,7 @@ export default function SearchLayout({ children }: { children: React.ReactNode }
         </div>
         <div className="order-last min-h-screen w-full md:order-none">{children}</div>
         <div className="order-none md:order-last md:w-1/6 md:flex-none">
-          <FilterList list={sorting} title="Sort by" />
+          <FilterList list={sorting} title="Trier par" />
         </div>
       </div>
       {/* @ts-expect-error Server Component */}

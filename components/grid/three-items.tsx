@@ -45,8 +45,11 @@ export async function BestSellerForHer() {
 
   return (
     <>
-      <div className=" bg-loblolly py-20 text-center text-5xl font-bold">
-        Les plus vendus: Pour Elle
+      <div className=" bg-loblolly pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
+        Best-Seller
+      </div>
+      <div className=" bg-loblolly pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
+        Pour Elle
       </div>
       <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
         <ThreeItemGridItem size="full" item={firstProduct} background="loblolly" />
@@ -67,8 +70,11 @@ export async function BestSellerForHim() {
 
   return (
     <>
-      <div className=" bg-athensGray py-20 text-center text-5xl font-bold">
-        Les plus vendus: Pour Lui
+      <div className=" bg-loblolly pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
+        Best-Seller
+      </div>
+      <div className=" bg-loblolly pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
+        Pour Lui
       </div>
       <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
         <ThreeItemGridItem size="half" item={firstProduct} background="loblolly" />

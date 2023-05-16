@@ -15,7 +15,7 @@ export default function Hero() {
               href="/search/pour-elle"
               className="mt-4 rounded-md bg-white px-4 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
             >
-              Shop now
+              Acheter Maintenant
             </a>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function Hero() {
               href="#"
               className="mt-4 rounded-md bg-white px-4 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
             >
-              Shop now
+              Acheter maintenant
             </a>
           </div>
         </div>
