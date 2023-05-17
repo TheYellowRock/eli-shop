@@ -45,10 +45,10 @@ export async function BestSellerForHer() {
 
   return (
     <>
-      <div className=" bg-loblolly pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
+      <div className=" bg-athensGray pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
         Best-Seller
       </div>
-      <div className=" bg-loblolly pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
+      <div className=" bg-athensGray pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
         Pour Elle
       </div>
       <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
@@ -70,10 +70,10 @@ export async function BestSellerForHim() {
 
   return (
     <>
-      <div className=" bg-loblolly pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
+      <div className=" bg-athensGray pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
         Best-Seller
       </div>
-      <div className=" bg-loblolly pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
+      <div className=" bg-athensGray pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
         Pour Lui
       </div>
       <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">

@@ -12,7 +12,7 @@ export default function CartIcon({
     <div className="relative">
       <ShoppingBagIcon
         className={clsx(
-          'h-6 transition-all ease-in-out hover:scale-110 hover:text-gray-500 dark:hover:text-gray-300',
+          'h-6 text-black transition-all ease-in-out hover:scale-110 hover:text-gray-500 dark:hover:text-gray-300',
           className
         )}
       />
