@@ -17,9 +17,9 @@ export default async function Footer() {
       <div className="mx-auto w-full max-w-7xl px-6">
         <div className="grid grid-cols-1 gap-8 border-b border-gray-700 py-12 transition-colors duration-150 lg:grid-cols-12">
           <div className="relative col-span-1 lg:col-span-3">
-            <a className="flex flex-initial items-center font-bold md:mr-24" href="/">
-              <span className="mr-2">
-                <LogoIcon className="h-16" />
+            <a className="flex flex-row align-middle font-bold md:mr-24" href="/">
+              <span className="mr-2 h-16 ">
+                <LogoIcon />
               </span>
             </a>
           </div>
@@ -45,7 +45,7 @@ export default async function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-center  space-y-4 pb-10 pt-6 text-sm md:flex-row">
+        <div className="flex w-full flex-col items-center space-y-4 pb-10 pt-6 text-center text-sm md:flex-row">
           <p>
             &copy; {copyrightDate} {SITE_NAME}. All rights reserved.
           </p>

@@ -62,7 +62,7 @@ export function AddToCart({
 
   return (
     <button
-      aria-label="Add item to cart"
+      aria-label="Ajouter au panier"
       disabled={isMutating}
       onClick={handleAdd}
       className={clsx(
@@ -73,7 +73,7 @@ export function AddToCart({
         }
       )}
     >
-      <span>{availableForSale ? 'Add To Cart' : 'Out Of Stock'}</span>
+      <span>{availableForSale ? 'Ajouter au panier' : 'Rupture de stock'}</span>
       {isMutating ? <LoadingDots className="bg-white dark:bg-black" /> : null}
     </button>
   );

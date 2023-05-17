@@ -13,18 +13,18 @@ export default async function Navbar() {
   const menu = await getMenu('next-js-frontend-header-menu');
 
   return (
-    <nav className="relative flex items-center justify-between bg-white p-4 dark:bg-black lg:px-6">
-      <div className="block w-1/3 md:hidden">
+    <nav className="relative flex items-center justify-between bg-white  lg:px-6">
+      <div className="block w-1/3 p-4 md:hidden">
         <MobileMenu menu={menu} />
       </div>
       <div className="flex justify-self-center md:w-1/3 md:justify-self-start">
-        <div className="md:mr-4">
+        <div className=" h-16 md:mr-12">
           <Link href="/" aria-label="Go back home">
-            <LogoIcon className="h-8 transition-transform hover:scale-110" />
+            <LogoIcon className="transition-transform hover:scale-110" />
           </Link>
         </div>
         {menu.length ? (
-          <ul className="hidden md:flex">
+          <ul className="hidden p-4 md:flex">
             {menu.map((item: Menu) => (
               <li key={item.title}>
                 <Link
@@ -38,11 +38,11 @@ export default async function Navbar() {
           </ul>
         ) : null}
       </div>
-      <div className="hidden w-1/3 md:block">
+      <div className="hidden w-1/3 p-4 md:block">
         <Search />
       </div>
 
-      <div className="flex w-1/3 justify-end">
+      <div className="flex w-1/3 justify-end p-4">
         <Suspense fallback={<CartIcon className="h-6" />}>
           {/* @ts-expect-error Server Component */}
           <Cart />
