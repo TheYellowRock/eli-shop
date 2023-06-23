@@ -1,7 +1,9 @@
-import { CarouselForHer, CarouselForHim } from 'components/carousel';
+
+import { CarouselForHer } from 'components/carousel';
 import { BestSellerForHer, BestSellerForHim } from 'components/grid/three-items';
-import Hero from 'components/hero';
+import { Genders, HeroBanner } from 'components/hero';
 import Footer from 'components/layout/footer';
+import { ListMoreHer, ListMoreHim, ListNewHer, ListNewHim } from 'components/list/list';
 import SalesHero from 'components/salesHero';
 import { Suspense } from 'react';
 
@@ -24,30 +26,38 @@ export const metadata = {
 export default async function HomePage() {
   return (
     <>
-      <Hero />
+      <HeroBanner />
       <Suspense>
-        {/* @ts-expect-error Server Component */}
-        <BestSellerForHer />
-        <Suspense>
-          {/* @ts-expect-error Server Component */}
-          <CarouselForHer />
-          <Suspense>
             {/* @ts-expect-error Server Component */}
-            <BestSellerForHim />
+            <CarouselForHer />
+      <Genders />
+       
+           {/* @ts-expect-error Server Component */}
+          <BestSellerForHer />
+
+           {/* @ts-expect-error Server Component */}
+<ListNewHer />
+{/* @ts-expect-error Server Component */}
+<ListMoreHer />
             <Suspense>
               {/* @ts-expect-error Server Component */}
-              <CarouselForHim />
+              <BestSellerForHim />
+{/* @ts-expect-error Server Component */}
+<ListNewHim />
+{/* @ts-expect-error Server Component */}
+<ListMoreHim />
 
-              <SalesHero />
+                <SalesHero />
 
-              <Suspense>
-                {/* @ts-expect-error Server Component */}
-                <Footer />
+                <Suspense>
+                  {/* @ts-expect-error Server Component */}
+                  <Footer />
+                </Suspense>
               </Suspense>
             </Suspense>
-          </Suspense>
-        </Suspense>
-      </Suspense>
+          
+      
+    
     </>
   );
 }

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import GitHubIcon from 'components/icons/github';
 import LogoIcon from 'components/icons/logo';
 import { getMenu } from 'lib/shopify';
 import { Menu } from 'lib/shopify/types';
@@ -13,12 +12,12 @@ export default async function Footer() {
   const menu = await getMenu('next-js-frontend-footer-menu');
 
   return (
-    <footer className="border-t border-gray-700 bg-athensGray text-black dark:bg-black dark:text-white">
+    <footer className="bg-gradient-to-b from-tealLight to-teal">
       <div className="mx-auto w-full max-w-7xl px-6">
-        <div className="grid grid-cols-1 gap-8 border-b border-gray-700 py-12 transition-colors duration-150 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-8 border-b border-t border-gray-700 py-12 transition-colors duration-150 lg:grid-cols-12">
           <div className="relative col-span-1 lg:col-span-3">
             <a className="flex flex-row align-middle font-bold md:mr-24" href="/">
-              <span className="mr-2 h-16 ">
+              <span className="mr-2 h-32 ">
                 <LogoIcon />
               </span>
             </a>
@@ -39,11 +38,6 @@ export default async function Footer() {
               </ul>
             </nav>
           ) : null}
-          <div className="col-span-1 text-black dark:text-white lg:col-span-2">
-            <a aria-label="Github Repository" href="https://github.com/vercel/commerce">
-              <GitHubIcon className="h-6" />
-            </a>
-          </div>
         </div>
         <div className="flex w-full flex-col items-center space-y-4 pb-10 pt-6 text-center text-sm md:flex-row">
           <p>

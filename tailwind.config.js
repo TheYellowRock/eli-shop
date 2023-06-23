@@ -12,7 +12,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)']
+        sans: ['var(--font-inter)'],
+        header: 'Ephesis',
+        paris: 'Parisienne'
       },
       colors: {
         gray: colors.neutral,
@@ -23,7 +25,13 @@ module.exports = {
         athensGray: '#E2E6EC',
         loblolly: '#BBC3CD',
         sandal: '#AE816F',
-        ebony: '#2A293E'
+        ebony: '#2A293E',
+        violetLight: '#ddd6f3',
+        rose: '#F19088',
+        roseLight: '#f5d9d0',
+        offWhite: '#f3f3ec',
+        teal: '#addbda',
+        tealLight: '#CBE4E1'
       },
       keyframes: {
         fadeIn: {
@@ -32,6 +40,11 @@ module.exports = {
         },
         marquee: {
           '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' }
+        },
+        heroCarousel: {
+          '0%': { transform: 'translateX(100%)' },
+          '50%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' }
         },
         blink: {
@@ -43,7 +56,8 @@ module.exports = {
       animation: {
         fadeIn: 'fadeIn .3s ease-in-out',
         carousel: 'marquee 30s linear infinite',
-        blink: 'blink 1.4s both infinite'
+        blink: 'blink 1.4s both infinite',
+        hero: 'heroCarousel blink 30s linear infinit'
       }
     }
   },

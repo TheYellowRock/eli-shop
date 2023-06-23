@@ -45,7 +45,7 @@ export async function CarouselForHer() {
   if (!products?.length) return null;
 
   return (
-    <div className="relative w-full overflow-hidden bg-sandal">
+    <div className="relative w-full overflow-hidden bg-gradient-to-b from-roseLight to-rose">
       <div className="flex animate-carousel">
         {[...products, ...products].map((product, i) => (
           <Link
@@ -56,17 +56,13 @@ export async function CarouselForHer() {
             {product.featuredImage ? (
               <Image
                 alt={product.title}
-                className="h-full object-contain"
+                className="h-full object-contain "
                 fill
                 sizes="33vw"
                 src={product.featuredImage.url}
               />
             ) : null}
-            <div className="absolute inset-y-0 right-0 flex items-center justify-center">
-              <div className="inline-flex bg-white p-2 text-sm font-semibold text-black dark:bg-black dark:text-white md:p-4 md:text-xl">
-                {product.title}
-              </div>
-            </div>
+            
           </Link>
         ))}
       </div>

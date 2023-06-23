@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Ephesis;
+  src: url('fonts/Ephesis-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Parisienne;
+  src: url('fonts/Parisienne-Regular.ttf') format('truetype');
+}
+
 @supports (font: -apple-system-body) and (-webkit-appearance: none) {
   img[loading='lazy'] {
     clip-path: inset(0.6px);

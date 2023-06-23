@@ -10,7 +10,18 @@ function ThreeItemGridItem({
 }: {
   item: Product;
   size: 'full' | 'half';
-  background: 'white' | 'pink' | 'purple' | 'black' | 'athens' | 'loblolly' | 'ebony' | 'sandal';
+  background:
+    | 'white'
+    | 'pink'
+    | 'purple'
+    | 'black'
+    | 'athens'
+    | 'loblolly'
+    | 'ebony'
+    | 'sandal'
+    | 'teal'
+    | 'rose'
+    | 'off-white';
 }) {
   return (
     <div
@@ -44,19 +55,11 @@ export async function BestSellerForHer() {
   const [firstProduct, secondProduct, thirdProduct] = homepageItems;
 
   return (
-    <>
-      <div className=" bg-athensGray pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
-        Best-Seller
-      </div>
-      <div className=" bg-athensGray pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
-        Pour Elle
-      </div>
-      <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
-        <ThreeItemGridItem size="full" item={firstProduct} background="loblolly" />
-        <ThreeItemGridItem size="half" item={secondProduct} background="ebony" />
-        <ThreeItemGridItem size="half" item={thirdProduct} background="sandal" />
-      </section>
-    </>
+    <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
+      <ThreeItemGridItem size="full" item={firstProduct} background="rose" />
+      <ThreeItemGridItem size="half" item={secondProduct} background="off-white" />
+      <ThreeItemGridItem size="half" item={thirdProduct} background="teal" />
+    </section>
   );
 }
 
@@ -69,18 +72,10 @@ export async function BestSellerForHim() {
   const [firstProduct, secondProduct, thirdProduct] = homepageItems;
 
   return (
-    <>
-      <div className=" bg-athensGray pb-2 pt-10 text-center text-5xl font-bold text-dark md:pb-5 md:pt-20 lg:text-7xl">
-        Best-Seller
-      </div>
-      <div className=" bg-athensGray pb-10 text-center text-3xl font-light text-dark md:pb-20 lg:text-5xl">
-        Pour Lui
-      </div>
-      <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
-        <ThreeItemGridItem size="half" item={firstProduct} background="loblolly" />
-        <ThreeItemGridItem size="full" item={secondProduct} background="ebony" />
-        <ThreeItemGridItem size="half" item={thirdProduct} background="sandal" />
-      </section>
-    </>
+    <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
+      <ThreeItemGridItem size="half" item={firstProduct} background="off-white" />
+      <ThreeItemGridItem size="full" item={secondProduct} background="teal" />
+      <ThreeItemGridItem size="half" item={thirdProduct} background="rose" />
+    </section>
   );
 }

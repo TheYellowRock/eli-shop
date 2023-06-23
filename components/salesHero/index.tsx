@@ -1,7 +1,7 @@
 export default function SalesHero() {
   return (
     <>
-      <main className=" bg-white">
+      <main className=" bg-gradient-to-b from-white to-tealLight">
         <div className="relative isolate">
           <svg
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
@@ -48,21 +48,21 @@ export default function SalesHero() {
             <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1 className="text-4xl text-center font-bold tracking-tight pb-8 text-gray-900 sm:text-6xl">
                     Découvrez notre incroyable collection de parfums alliant une qualité
                     exceptionnelle et des prix abordables.
                   </h1>
-                  <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  <p className="relative mt-6 text-justify text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     Nous sommes fiers de vous offrir une gamme de fragrances exquises, conçues avec
                     soin et passion. Chaque parfum est le fruit d'une expertise parfumée unique,
                     captivant les sens et laissant une empreinte mémorable. Ne manquez pas
                     l'occasion de parcourir l'intégralité de notre collection, où vous trouverez
                     certainement la fragrance parfaite qui correspond à votre style et à votre
-                    personnalité. Visitez notre site dès maintenant et laissez-vous envoûter par la
+                    personnalité. Visitez notre collection dès maintenant et laissez-vous envoûter par la
                     beauté olfactive qui vous attend.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
-                    <a href="/search" className="text-sm font-semibold leading-6 text-gray-900">
+                    <a href="/search" className="w-full text-sm text-right font-semibold leading-6 text-gray-900">
                       Découvrez la collection <span aria-hidden="true">→</span>
                     </a>
                   </div>

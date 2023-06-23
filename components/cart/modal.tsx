@@ -59,7 +59,7 @@ export default function CartModal({
               className="flex w-full flex-col bg-white p-8 text-black dark:bg-black dark:text-white md:w-3/5 lg:w-2/5"
             >
               <div className="flex items-center justify-between">
-                <p className="text-lg font-bold">My Cart</p>
+                <p className="text-lg font-bold">Mon Panier</p>
                 <button
                   aria-label="Close cart"
                   onClick={onClose}
@@ -73,7 +73,7 @@ export default function CartModal({
               {cart.lines.length === 0 ? (
                 <div className="mt-20 flex w-full flex-col items-center justify-center overflow-hidden">
                   <ShoppingBagIcon className="h-16" />
-                  <p className="mt-6 text-center text-2xl font-bold">Your cart is empty.</p>
+                  <p className="mt-6 text-center text-2xl font-bold">Votre Panier est vide.</p>
                 </div>
               ) : null}
               {cart.lines.length !== 0 ? (
@@ -159,7 +159,7 @@ export default function CartModal({
                     </div>
                     <div className="mb-2 flex items-center justify-between border-b border-gray-200 pb-2">
                       <p>Shipping</p>
-                      <p className="text-right">Calculated at checkout</p>
+                      <p className="text-right">Calculé au checkout</p>
                     </div>
                     <div className="mb-2 flex items-center justify-between font-bold">
                       <p>Total</p>
@@ -174,7 +174,7 @@ export default function CartModal({
                     href={cart.checkoutUrl}
                     className="flex w-full items-center justify-center bg-black p-3 text-sm font-medium uppercase text-white opacity-90 hover:opacity-100 dark:bg-white dark:text-black"
                   >
-                    <span>Proceed to Checkout</span>
+                    <span>Procédez au Checkout</span>
                   </a>
                 </div>
               ) : null}

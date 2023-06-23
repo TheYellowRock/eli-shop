@@ -41,7 +41,7 @@ export function Gallery({
             height={600}
             isInteractive={false}
             priority={true}
-            background="loblolly"
+            background="off-white"
             labels={{
               title,
               amount,
