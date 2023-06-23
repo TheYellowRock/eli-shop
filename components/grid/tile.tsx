@@ -53,7 +53,7 @@ export function GridTileImage({
         'bg-[#CBE4E1] dark:bg-[#CBE4E1]': background === 'teal',
         'bg-[#f5d9d0] dark:bg-[#f5d9d0]': background === 'rose',
         'bg-[#f3f3ec] dark:bg-[#f3f3ec]': background === 'off-white',
-        'bg-gray-100 dark:bg-gray-900': !background,
+        'bg-gray-100': !background,
       
         relative: labels
       })}
@@ -75,13 +75,13 @@ export function GridTileImage({
           <h3
             data-testid="product-name"
             className={clsx(
-              'inline bg-white box-decoration-clone py-3 pl-2 text-sm font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg md:pl-5 md:text-xl lg:text-xl '
+              'inline bg-white box-decoration-clone py-2 pl-2 text-sm font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg md:pl-5 md:text-xl lg:text-xl '
             )}
           >
             {labels.title}
           </h3>
           <Price
-            className="w-fit bg-white px-5 py-3 text-xs font-semibold md:text-sm lg:text-md"
+            className="w-fit bg-white px-2 py-1 text-xs font-semibold md:text-sm lg:text-md"
             amount={labels.amount}
             currencyCode={labels.currencyCode}
           />
