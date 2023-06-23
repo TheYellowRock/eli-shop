@@ -75,7 +75,7 @@ export function GridTileImage({
           <h3
             data-testid="product-name"
             className={clsx(
-              'inline bg-white box-decoration-clone py-3 pl-2 text-lg font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg md:pl-5 md:text-xl lg:text-xl '
+              'inline bg-white box-decoration-clone py-3 pl-2 text-sm font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg md:pl-5 md:text-xl lg:text-xl '
             )}
           >
             {labels.title}

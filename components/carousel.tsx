@@ -27,7 +27,7 @@ export async function Carousel() {
               />
             ) : null}
             <div className="absolute inset-y-0 right-0 flex items-center justify-center">
-              <div className="inline-flex bg-white p-2 text-sm font-semibold text-black dark:bg-black dark:text-white md:p-4 md:text-xl">
+              <div className="inline-flex bg-white p-2 text-sm font-semibold text-blackmd:p-4 md:text-xl">
                 {product.title}
               </div>
             </div>
@@ -95,7 +95,7 @@ export async function CarouselForHim() {
               />
             ) : null}
             <div className="absolute inset-y-0 right-0 flex items-center justify-center">
-              <div className="inline-flex bg-white p-2 text-sm font-semibold text-black dark:bg-black dark:text-white md:p-4 md:text-xl">
+              <div className="inline-flex bg-white p-2 text-sm font-semibold text-black md:p-4 md:text-xl">
                 {product.title}
               </div>
             </div>
