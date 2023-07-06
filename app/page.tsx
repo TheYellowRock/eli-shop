@@ -1,7 +1,6 @@
-
 import { CarouselForHer } from 'components/carousel';
 import { BestSellerForHer, BestSellerForHim } from 'components/grid/three-items';
-import { Genders, HeroBanner } from 'components/hero';
+import { HeroBanner, HeroPourElle, HeroPourLui } from 'components/hero';
 import Footer from 'components/layout/footer';
 import { ListMoreHer, ListMoreHim, ListNewHer, ListNewHim } from 'components/list/list';
 import SalesHero from 'components/salesHero';
@@ -28,36 +27,33 @@ export default async function HomePage() {
     <>
       <HeroBanner />
       <Suspense>
+        {/* @ts-expect-error Server Component */}
+        <CarouselForHer />
+        <HeroPourElle />
+        {/* @ts-expect-error Server Component */}
+        <BestSellerForHer />
+
+        {/* @ts-expect-error Server Component */}
+        <ListNewHer />
+        {/* @ts-expect-error Server Component */}
+        <ListMoreHer />
+        <Suspense>
+          <HeroPourLui />
+          {/* @ts-expect-error Server Component */}
+          <BestSellerForHim />
+          {/* @ts-expect-error Server Component */}
+          <ListNewHim />
+          {/* @ts-expect-error Server Component */}
+          <ListMoreHim />
+
+          <SalesHero />
+
+          <Suspense>
             {/* @ts-expect-error Server Component */}
-            <CarouselForHer />
-      <Genders />
-       
-           {/* @ts-expect-error Server Component */}
-          <BestSellerForHer />
-
-           {/* @ts-expect-error Server Component */}
-<ListNewHer />
-{/* @ts-expect-error Server Component */}
-<ListMoreHer />
-            <Suspense>
-              {/* @ts-expect-error Server Component */}
-              <BestSellerForHim />
-{/* @ts-expect-error Server Component */}
-<ListNewHim />
-{/* @ts-expect-error Server Component */}
-<ListMoreHim />
-
-                <SalesHero />
-
-                <Suspense>
-                  {/* @ts-expect-error Server Component */}
-                  <Footer />
-                </Suspense>
-              </Suspense>
-            </Suspense>
-          
-      
-    
+            <Footer />
+          </Suspense>
+        </Suspense>
+      </Suspense>
     </>
   );
 }

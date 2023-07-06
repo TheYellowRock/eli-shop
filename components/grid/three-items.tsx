@@ -55,7 +55,10 @@ export async function BestSellerForHer() {
   const [firstProduct, secondProduct, thirdProduct] = homepageItems;
 
   return (
-    <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
+    <section
+      className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-6 lg:grid-rows-2"
+      data-testid="homepage-products"
+    >
       <ThreeItemGridItem size="full" item={firstProduct} background="rose" />
       <ThreeItemGridItem size="half" item={secondProduct} background="off-white" />
       <ThreeItemGridItem size="half" item={thirdProduct} background="teal" />
@@ -72,7 +75,10 @@ export async function BestSellerForHim() {
   const [firstProduct, secondProduct, thirdProduct] = homepageItems;
 
   return (
-    <section className="lg:grid lg:grid-cols-6 lg:grid-rows-2" data-testid="homepage-products">
+    <section
+      className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-6 lg:grid-rows-2"
+      data-testid="homepage-products"
+    >
       <ThreeItemGridItem size="half" item={firstProduct} background="off-white" />
       <ThreeItemGridItem size="full" item={secondProduct} background="teal" />
       <ThreeItemGridItem size="half" item={thirdProduct} background="rose" />

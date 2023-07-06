@@ -27,7 +27,7 @@ module.exports = {
         sandal: '#AE816F',
         ebony: '#2A293E',
         violetLight: '#ddd6f3',
-        rose: '#F19088',
+        rose: '#e9a1a4',
         roseLight: '#f5d9d0',
         offWhite: '#f3f3ec',
         teal: '#addbda',

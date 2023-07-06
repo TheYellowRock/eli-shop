@@ -1,3 +1,4 @@
+import { HeroPromo } from 'components/hero';
 import Footer from 'components/layout/footer';
 import Collections from 'components/layout/search/collections';
 import FilterList from 'components/layout/search/filter';
@@ -7,6 +8,7 @@ import { Suspense } from 'react';
 export default function SearchLayout({ children }: { children: React.ReactNode }) {
   return (
     <Suspense>
+      <HeroPromo />
       <div className="mx-auto flex max-w-7xl flex-col bg-white py-6 text-black md:flex-row">
         <div className="order-first flex-none md:w-1/6">
           <Collections />
