@@ -24,8 +24,8 @@ export function GridTileImage({
     | 'loblolly'
     | 'ebony'
     | 'sandal'
-    | 'teal' | 
-    'off-white'
+    | 'teal'
+    | 'off-white'
     | 'rose';
   active?: boolean;
   labels?: {
@@ -54,7 +54,7 @@ export function GridTileImage({
         'bg-[#f5d9d0] dark:bg-[#f5d9d0]': background === 'rose',
         'bg-[#f3f3ec] dark:bg-[#f3f3ec]': background === 'off-white',
         'bg-gray-100': !background,
-      
+
         relative: labels
       })}
     >
@@ -70,39 +70,41 @@ export function GridTileImage({
           alt={props.title || ''}
         />
       ) : null}
-      {labels? (labels.isSmall ? ( 
-        <div className="absolute bottom-0 left-0 w-3/4 text-black">
-          <h3
-            data-testid="product-name"
-            className={clsx(
-              'inline bg-white box-decoration-clone py-2 pl-2 text-sm font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg md:pl-5 md:text-xl lg:text-xl '
-            )}
-          >
-            {labels.title}
-          </h3>
-          <Price
-            className="w-fit bg-white px-2 py-1 text-xs font-semibold md:text-sm lg:text-md"
-            amount={labels.amount}
-            currencyCode={labels.currencyCode}
-          />
-        </div>
-      ) : (
-        <div className="absolute bottom-0 left-0 w-3/4 text-black"> 
-          <h3
-            data-testid="product-name"
-            className={clsx(
-              'inline bg-white box-decoration-clone py-3 pl-2 text-3xl font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white md:pl-5 md:text-3xl lg:text-5xl '
-            )}
-          >
-            {labels.title}
-          </h3>
-          <Price
-            className="w-fit bg-white px-5 py-3 text-lg font-semibold md:text-lg lg:text-xl"
-            amount={labels.amount}
-            currencyCode={labels.currencyCode}
-          />
-        </div>
-      )): null}
+      {labels ? (
+        labels.isSmall ? (
+          <div className="absolute bottom-0 left-0 w-3/4 text-black">
+            <h3
+              data-testid="product-name"
+              className={clsx(
+                'inline bg-white box-decoration-clone px-2 py-2 text-sm font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg  md:text-xl lg:text-xl '
+              )}
+            >
+              {labels.title}
+            </h3>
+            <Price
+              className="lg:text-md w-fit bg-white px-2 py-1 text-xs font-semibold md:text-sm"
+              amount={labels.amount}
+              currencyCode={labels.currencyCode}
+            />
+          </div>
+        ) : (
+          <div className="absolute bottom-0 left-0 w-3/4 text-black">
+            <h3
+              data-testid="product-name"
+              className={clsx(
+                'inline bg-white box-decoration-clone py-3 pl-2 text-3xl font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white md:pl-5 md:text-3xl lg:text-5xl '
+              )}
+            >
+              {labels.title}
+            </h3>
+            <Price
+              className="w-fit bg-white px-5 py-3 text-lg font-semibold md:text-lg lg:text-xl"
+              amount={labels.amount}
+              currencyCode={labels.currencyCode}
+            />
+          </div>
+        )
+      ) : null}
     </div>
   );
 }

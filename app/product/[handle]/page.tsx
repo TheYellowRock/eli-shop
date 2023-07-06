@@ -63,7 +63,7 @@ export default async function ProductPage({ params }: { params: { handle: string
     <>
       <HeroPromo />
       <div className="mx-auto max-w-7xl">
-        <div className="m-20 lg:grid lg:grid-cols-6">
+        <div className="lg:m-20 lg:grid lg:grid-cols-6">
           <div className="lg:col-span-3">
             <Gallery
               title={product.title}

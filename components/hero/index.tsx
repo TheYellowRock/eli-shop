@@ -99,10 +99,13 @@ export function HeroPourElle() {
             Notre collection repousse les limites de la parfumerie traditionnelle et présente des
             fragrances innovantes.
           </div>
-          <button className="my-5 border border-black p-2 text-sm font-extralight uppercase text-black hover:bg-black hover:text-white lg:mt-10 lg:p-5 lg:text-3xl">
+          <Link
+            href="/search/pour-elle"
+            className="my-5 border border-black p-2 text-sm font-extralight uppercase text-black hover:bg-black hover:text-white lg:mt-10 lg:p-5 lg:text-3xl"
+          >
             Collection Pour Femme
             <span aria-hidden="true"> &rarr;</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -126,10 +129,13 @@ export function HeroPourLui() {
             Notre collection de parfums pour hommes présente une variété d'options captivantes qui
             font des cadeaux inoubliables.
           </div>
-          <button className="my-5 border border-black p-2 text-sm font-extralight uppercase text-black hover:bg-black hover:text-white lg:mt-10 lg:p-5 lg:text-3xl">
+          <Link
+            href="/search/pour-lui"
+            className="my-5 border border-black p-2 text-sm font-extralight uppercase text-black hover:bg-black hover:text-white lg:mt-10 lg:p-5 lg:text-3xl"
+          >
             Collection Pour Homme
             <span aria-hidden="true"> &rarr;</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
