@@ -279,7 +279,7 @@ export async function getCollections(): Promise<Collection[]> {
   const collections = [
     {
       handle: '',
-      title: 'All',
+      title: 'Tous les produits',
       description: 'All products',
       seo: {
         title: 'All',

@@ -1,7 +1,7 @@
 export default function SalesHero() {
   return (
     <>
-      <main className=" bg-gradient-to-b from-white to-tealLight">
+      <main className=" bg-gradient-to-b from-white to-tealLight overflow-hidden">
         <div className="relative isolate">
           <svg
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"

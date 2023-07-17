@@ -117,7 +117,7 @@ export function HeroPourLui() {
     <div className="mx-auto h-auto max-w-7xl">
       <div className="relative flex  overflow-hidden ">
         <img
-          src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/pourLui.jpg?v=1688543224"
+          src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/pourLui-2.jpg?v=1689553508"
           alt=""
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -152,8 +152,8 @@ export function HeroPromo() {
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="justify-right relative mr-auto flex w-1/2 flex-col items-center p-5">
-          <div className="pb-5 pt-5 text-2xl font-extrabold text-white lg:text-5xl">1 + 1 = 3 </div>
-          <div className="pb-5  text-2xl font-extrabold text-white lg:text-5xl">2 + 2 = 5 </div>
+          <div className="pb-5 pt-5 text-sm text-center font-extrabold text-white lg:text-2xl">Profitez de notre offre de lancement limitée </div>
+          <div className="pb-5  text-2xl font-extrabold text-white lg:text-5xl">1 + 1 = 3 </div>
           <div className="pb-5  text-center text-sm font-extralight lg:text-2xl">
             Utilisez le code promo: ELISUMMER
           </div>
