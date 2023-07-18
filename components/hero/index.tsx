@@ -68,8 +68,8 @@ export function HeroBanner() {
   return (
     <div className="w-full">
       <div className="flex w-full flex-row justify-around bg-gradient-to-b from-offWhite to-roseLight ">
-        <div className="w-2/3 p-2 xl:p-16">
-          <div className=" animate-fade-up animate-duration-1000 animate-delay-500 animate-ease-in-out my-6 text-center font-paris text-3xl font-extralight xl:text-7xl">
+        <div className="w-2/3 p-2 lg:p-14 xl:p-16 2xl:p-20 3xl:p-24">
+          <div className=" animate-fade-up animate-duration-1000 animate-delay-500 animate-ease-in-out my-6 text-center font-paris text-3xl font-extralight lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl">
             Vivez l'essence du luxe olfactif à chaque instant
           </div>
           <div className=" animate-fade-up animate-duration-1000 animate-delay-800 animate-ease-in-out my-6 text-center text-lg font-extralight xl:text-3xl">
@@ -84,7 +84,7 @@ export function HeroBanner() {
 
 export function HeroPourElle() {
   return (
-    <div className="mx-auto mt-5 h-auto max-w-7xl lg:mt-20">
+    <div className="mx-auto mt-5 h-auto lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl lg:mt-20">
       <div className="relative flex  overflow-hidden ">
         <img
           src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/pourElle.jpg?v=1688543224"
@@ -92,16 +92,16 @@ export function HeroPourElle() {
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="justify-right relative ml-auto flex w-1/2 flex-col items-center p-6 lg:p-16">
-          <div className="pb-5 pt-5 text-xl font-light lg:pt-28 lg:text-5xl">
+          <div className="pb-5 pt-5 text-xl font-light lg:pt-16 xl:pt-20 2xl:pt-24 3xl:pt-28 lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl">
             Découvrez l'essence de l'élégance{' '}
           </div>
-          <div className="pb-10 pt-5 text-sm font-extralight lg:pb-28 lg:text-2xl">
+          <div className="pb-10 pt-5 text-sm font-extralight lg:pt-16 xl:pt-20 2xl:pt-24 3xl:pt-28 lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl ">
             Notre collection repousse les limites de la parfumerie traditionnelle et présente des
             fragrances innovantes.
           </div>
           <Link
             href="/search/pour-elle"
-            className="my-5 border border-black p-2 text-sm font-extralight uppercase text-black hover:bg-black hover:text-white lg:mt-10 lg:p-5 lg:text-3xl"
+            className="my-5 mx-auto text-center border border-black p-2 text-sm w-full font-extralight uppercase text-black hover:bg-black hover:text-white  lg:p-5 lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl"
           >
             Collection Pour Femme
             <span aria-hidden="true"> &rarr;</span>
@@ -114,24 +114,24 @@ export function HeroPourElle() {
 
 export function HeroPourLui() {
   return (
-    <div className="mx-auto h-auto max-w-7xl">
+    <div className="mx-auto h-auto lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl">
       <div className="relative flex  overflow-hidden ">
         <img
-          src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/pourLui-2.jpg?v=1689553508"
+          src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/pourLui-2_copy.jpg?v=1689674623"
           alt=""
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="justify-right relative mr-auto flex w-1/2 flex-col items-center p-6 lg:p-16">
-          <div className="pb-5 pt-5 text-xl font-light lg:pt-28 lg:text-5xl">
+          <div className="pb-5 pt-5 text-xl font-light lg:pt-16 xl:pt-20 2xl:pt-24 3xl:pt-28 lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl">
             Affirmez votre Parfum Signature{' '}
           </div>
-          <div className="pb-10 pt-5 text-sm font-extralight lg:pb-28 lg:text-2xl">
+          <div className="pb-10 pt-5 text-sm font-extralight lg:pt-16 xl:pt-20 2xl:pt-24 3xl:pt-28 lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl">
             Notre collection de parfums pour hommes présente une variété d'options captivantes qui
             font des cadeaux inoubliables.
           </div>
           <Link
             href="/search/pour-lui"
-            className="my-5 border border-black p-2 text-sm font-extralight uppercase text-black hover:bg-black hover:text-white lg:mt-10 lg:p-5 lg:text-3xl"
+            className="my-5 mx-auto text-center border border-black p-2 text-sm w-full font-extralight uppercase text-black hover:bg-black hover:text-white lg:mt-10 lg:p-5 lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl"
           >
             Collection Pour Homme
             <span aria-hidden="true"> &rarr;</span>
@@ -144,7 +144,7 @@ export function HeroPourLui() {
 
 export function HeroPromo() {
   return (
-    <div className="mx-auto mt-5 h-auto max-w-7xl ">
+    <div className="mx-auto mt-5 h-auto lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl ">
       <div className="relative flex  overflow-hidden ">
         <img
           src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/PromoBanner.jpg?v=1688547800"
@@ -152,9 +152,9 @@ export function HeroPromo() {
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div className="justify-right relative mr-auto flex w-1/2 flex-col items-center p-5">
-          <div className="pb-5 pt-5 text-sm text-center font-extrabold text-white lg:text-2xl">Profitez de notre offre de lancement limitée </div>
-          <div className="pb-5  text-2xl font-extrabold text-white lg:text-5xl">1 + 1 = 3 </div>
-          <div className="pb-5  text-center text-sm font-extralight lg:text-2xl">
+          <div className="pb-5 pt-5 text-sm text-center font-bold text-white lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl">Profitez de notre offre de lancement limitée </div>
+          <div className="pb-5  text-2xl font-extrabold text-white lg:text-4xl xl:text-5xl 2xl:text-6xl 3xl:text-7xl">1 + 1 = 3 </div>
+          <div className="pb-5  text-center text-sm font-extralight lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl">
             Utilisez le code promo: ELISUMMER
           </div>
         </div>

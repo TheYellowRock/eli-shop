@@ -56,7 +56,7 @@ export async function BestSellerForHer() {
 
   return (
     <section
-      className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-6 lg:grid-rows-2"
+      className="lg:mx-auto lg:grid lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl lg:grid-cols-6 lg:grid-rows-2"
       data-testid="homepage-products"
     >
       <ThreeItemGridItem size="full" item={firstProduct} background="rose" />
@@ -76,7 +76,7 @@ export async function BestSellerForHim() {
 
   return (
     <section
-      className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-6 lg:grid-rows-2"
+      className="lg:mx-auto lg:grid lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl lg:grid-cols-6 lg:grid-rows-2"
       data-testid="homepage-products"
     >
       <ThreeItemGridItem size="half" item={firstProduct} background="off-white" />

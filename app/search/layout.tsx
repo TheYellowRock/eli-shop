@@ -9,7 +9,7 @@ export default function SearchLayout({ children }: { children: React.ReactNode }
   return (
     <Suspense>
       <HeroPromo />
-      <div className="mx-auto flex max-w-7xl flex-col bg-white py-6 text-black md:flex-row">
+      <div className="mx-auto flex lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl flex-col bg-white py-6 text-black md:flex-row">
         <div className="order-first flex-none md:w-1/6">
           <Collections />
         </div>

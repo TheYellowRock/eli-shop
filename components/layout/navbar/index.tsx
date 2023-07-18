@@ -16,7 +16,7 @@ export default async function Navbar() {
       <p className="flex h-16 items-center justify-center bg-gray-800 px-4 text-lg font-light text-white sm:px-6 lg:px-8">
         Livraison gratuite a partir de 30 Euro !
       </p>
-      <nav className="relative mx-auto flex max-w-7xl items-baseline justify-between bg-white lg:px-6">
+      <nav className="relative mx-auto flex lg:max-w-5xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl items-baseline justify-between bg-white lg:px-6">
         <div className="block w-1/3 p-4 text-black md:hidden">
           <MobileMenu menu={menu} />
         </div>
@@ -27,7 +27,7 @@ export default async function Navbar() {
                 <li key={item.title}>
                   <Link
                     href={item.path}
-                    className="text-justify-center px-4 py-1 text-base text-gray-800 hover:font-bold "
+                    className="text-justify-center px-4 py-4 text-base text-gray-800 hover:font-bold "
                   >
                     {item.title}
                   </Link>
@@ -36,7 +36,7 @@ export default async function Navbar() {
             </ul>
           ) : null}
         </div>
-        <div className="flex w-1/3 justify-around p-4 ">
+        <div className="flex w-1/3 justify-center align-baseline p-4 ">
           <div className=" h-24 ">
             <Link href="/" aria-label="Go back home">
               <LogoIcon className="transition-transform hover:scale-110" />

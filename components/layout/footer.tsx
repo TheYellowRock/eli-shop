@@ -12,9 +12,9 @@ export default async function Footer() {
   const menu = await getMenu('next-js-frontend-footer-menu');
 
   return (
-    <footer className=" bg-sky-600">
-      <div className="mx-auto w-full max-w-7xl px-6">
-        <div className="grid grid-cols-1 gap-8 border-b border-t border-gray-700 py-12 transition-colors duration-150 lg:grid-cols-12">
+    <footer className=" bg-gray-100">
+      <div className="mx-auto w-full lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl px-6">
+        <div className="grid grid-cols-1 gap-8 border-b border-gray-700 py-12 transition-colors duration-150 lg:grid-cols-12">
           <div className="relative col-span-1 lg:col-span-4 mx-auto">
             <a className="flex flex-row align-middle font-bold md:mr-24" href="/">
               <span className="mr-2 h-32 ">
@@ -29,7 +29,7 @@ export default async function Footer() {
                   <li key={item.title} className="py-3 mx-auto md:py-0 md:pb-4">
                     <Link
                       href={item.path}
-                      className="text-gray-800 transition duration-150 ease-in-out hover:text-gray-300"
+                      className="text-gray-800 transition duration-150 ease-in-out hover:text-gray-400"
                     >
                       {item.title}
                     </Link>

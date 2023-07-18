@@ -62,8 +62,8 @@ export default async function ProductPage({ params }: { params: { handle: string
   return (
     <>
       <HeroPromo />
-      <div className="mx-auto max-w-7xl">
-        <div className="lg:m-20 lg:grid lg:grid-cols-6">
+      <div className="mx-auto lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl">
+        <div className="lg:m-5 xl:m-8 2xl:m-14 3xl:m-20 lg:grid lg:grid-cols-6">
           <div className="lg:col-span-3">
             <Gallery
               title={product.title}
@@ -109,8 +109,8 @@ async function RelatedProducts({ id }: { id: string }) {
 
   return (
     <div className="px-4 py-8">
-      <div className="mb-4 text-3xl font-bold">Related Products</div>
-      <Grid className="grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+      <div className="mb-4 text-lg lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl font-bold">Recommendations</div>
+      <Grid className="grid-cols-2 lg:grid-cols-4">
         <ProductGridItems products={relatedProducts} />
       </Grid>
     </div>

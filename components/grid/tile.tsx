@@ -76,7 +76,7 @@ export function GridTileImage({
             <h3
               data-testid="product-name"
               className={clsx(
-                'inline bg-white box-decoration-clone px-2 py-2 text-sm font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg  md:text-xl lg:text-xl '
+                'inline bg-white box-decoration-clone px-2 py-2 text-sm font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white sm:text-lg  md:text-xl lg:text-sm xl:text-lg 2xl:text-xl  '
               )}
             >
               {labels.title}
@@ -92,13 +92,13 @@ export function GridTileImage({
             <h3
               data-testid="product-name"
               className={clsx(
-                'inline bg-white box-decoration-clone py-3 pl-2 text-3xl font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white md:pl-5 md:text-3xl lg:text-5xl '
+                'inline bg-white box-decoration-clone py-3 pl-2 text-3xl font-semibold leading-loose shadow-[1.25rem_0_0] shadow-white md:pl-5 md:text-3xl lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl '
               )}
             >
               {labels.title}
             </h3>
             <Price
-              className="w-fit bg-white px-5 py-3 text-lg font-semibold md:text-lg lg:text-xl"
+              className="w-fit bg-white px-5 py-3 text-lg font-semibold md:text-lg lg:text-sm xl:text-lg 2xl:text-xl 3xl:text-2xl"
               amount={labels.amount}
               currencyCode={labels.currencyCode}
             />
