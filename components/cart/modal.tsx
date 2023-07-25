@@ -142,7 +142,7 @@ export default function CartModal({
                   </ul>
                   <div className="border-t border-gray-200 pt-2 text-sm text-black">
                     <div className="mb-2 flex items-center justify-between">
-                      <p>Subtotal</p>
+                      <p>Soustotal</p>
                       <Price
                         className="text-right"
                         amount={cart.cost.subtotalAmount.amount}
@@ -158,7 +158,7 @@ export default function CartModal({
                       />
                     </div>
                     <div className="mb-2 flex items-center justify-between border-b border-gray-200 pb-2">
-                      <p>Shipping</p>
+                      <p>Livraison</p>
                       <p className="text-right">Calculé au checkout</p>
                     </div>
                     <div className="mb-2 flex items-center justify-between font-bold">
@@ -174,7 +174,7 @@ export default function CartModal({
                     href={cart.checkoutUrl}
                     className="flex w-full items-center justify-center bg-black p-3 text-sm font-medium uppercase text-white opacity-90 hover:opacity-100"
                   >
-                    <span>Procédez au Checkout</span>
+                    <span>Procédez au Payment</span>
                   </a>
                 </div>
               ) : null}

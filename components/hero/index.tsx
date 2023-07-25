@@ -117,7 +117,7 @@ export function HeroPourLui() {
     <div className="mx-auto h-auto lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl 3xl:max-w-7xl">
       <div className="relative flex  overflow-hidden ">
         <img
-          src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/pourLui-2_copy.jpg?v=1689674623"
+          src="https://cdn.shopify.com/s/files/1/0764/5514/9880/files/pourLui.jpg?v=1690277291"
           alt=""
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
